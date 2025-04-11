@@ -105,7 +105,7 @@ Refer Postman Collection attached https://github.com/dipendrakumar2/Event-API/bl
 
 This project is open-source and available under the [MIT License](LICENSE).
 
-## TO DO
+## Architecture Digram for  push notification
 Serverless Notification Service Architecture 
 A serverless notification system requires valid AWS access, but I currently don't have it.
 ![Architecture Digram](https://github.com/dipendrakumar2/Event-API/blob/main/Architecture-digram-Push-Notification.docx)
