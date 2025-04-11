@@ -105,6 +105,3 @@ Refer Postman Collection attached https://github.com/dipendrakumar2/Event-API/bl
 
 This project is open-source and available under the [MIT License](LICENSE).
 
-## Contributing
-
-Pull requests are welcome. For major changes, please feel free to reachout to me.
