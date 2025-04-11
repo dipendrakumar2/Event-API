@@ -103,7 +103,3 @@ This project is open-source and available under the [MIT License](LICENSE).
 ## Contributing
 
 Pull requests are welcome. For major changes, please feel free to reachout to me.
-
-## Support
-
-For support, please open an issue in the GitHub repository.
