@@ -1,0 +1,244 @@
+{
+	"info": {
+		"_postman_id": "d3a917e8-f584-4afe-91aa-a8a2885d8e94",
+		"name": "Event-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "2124824"
+	},
+	"item": [
+		{
+			"name": "Register  User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Dipendra K\",\r\n    \"email\": \"dipendra.kumar2@gmail.com\",\r\n    \"password\": \"secret1234\",\r\n    \"password_confirmation\": \"secret1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/register"
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"dipendra.kumar2@gmail.com\",\r\n    \"password\": \"secret1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Event",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "3|bUNmqIAR6Bw6nAmlbaC4LEZbi7RIUMcDzD6F9kzyc4b13e76"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Tech Conference\",\r\n    \"description\": \"Annual tech conference\",\r\n    \"start_date\": \"2023-12-15 09:00:00\",\r\n    \"end_date\": \"2023-12-17 18:00:00\",\r\n    \"location\": \"Convention Center\",\r\n    \"capacity\": 500,\r\n    \"price\": 199.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/events"
+			},
+			"response": []
+		},
+		{
+			"name": "Book Event",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "4|awMwd2jY5Lvww1i47Z7Gw8qWey10wftgn26AS8nLc6438cb0"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ticket_count\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/events/2/bookings"
+			},
+			"response": []
+		},
+		{
+			"name": "Show  All Events",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/api/events"
+			},
+			"response": []
+		},
+		{
+			"name": "Show  All Bookings",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "4|awMwd2jY5Lvww1i47Z7Gw8qWey10wftgn26AS8nLc6438cb0"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/api/bookings"
+			},
+			"response": []
+		},
+		{
+			"name": "Show  Booking  Details",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "4|awMwd2jY5Lvww1i47Z7Gw8qWey10wftgn26AS8nLc6438cb0"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/api/bookings/4"
+			},
+			"response": []
+		},
+		{
+			"name": "Show  one event",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/api/events/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Event",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "4|awMwd2jY5Lvww1i47Z7Gw8qWey10wftgn26AS8nLc6438cb0"
+					}
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/events/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Booking",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "4|awMwd2jY5Lvww1i47Z7Gw8qWey10wftgn26AS8nLc6438cb0"
+					}
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/bookings/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Event",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "4|awMwd2jY5Lvww1i47Z7Gw8qWey10wftgn26AS8nLc6438cb0"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Tech Conference\",\r\n    \"description\": \"Annual tech conference\",\r\n    \"start_date\": \"2023-12-15 09:00:00\",\r\n    \"end_date\": \"2023-12-17 18:00:00\",\r\n    \"location\": \"Convention Center\",\r\n    \"capacity\": 500,\r\n    \"price\": 199.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/events/2"
+			},
+			"response": []
+		}
+	]
+}
