@@ -108,4 +108,4 @@ This project is open-source and available under the [MIT License](LICENSE).
 ## TO DO
 Serverless Notification Service Architecture 
 A serverless notification system requires valid AWS access, but I currently don't have it.
-![Architecture Digram](Architecture  digram  - Push Notification.docx)
+![Architecture Digram](https://github.com/dipendrakumar2/Event-API/blob/main/Architecture  digram  - Push Notification.docx)
