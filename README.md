@@ -90,7 +90,7 @@ php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
 ### POSTMAN Collection attached
 ## Database Schema
 
-![Database Schema](file:///C:/Users/abc/Downloads/event_db.svg)
+![Database Schema](event_db.svg)
 
 ## Testing
 
