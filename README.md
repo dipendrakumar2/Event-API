@@ -27,8 +27,8 @@ A RESTful API for event management and booking system built with Laravel.
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/event-booking-api.git
-cd event-booking-api
+git clone [https://github.com/yourusername/event-booking-api.git](https://github.com/dipendrakumar2/Event-API)
+cd Event-API)
 ```
 
 2. Install dependencies:
@@ -102,7 +102,7 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Pull requests are welcome. For major changes, please feel free to reachout to me.
 
 ## Support
 
