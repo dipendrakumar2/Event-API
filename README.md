@@ -27,7 +27,7 @@ A RESTful API for event management and booking system built with Laravel.
 
 1. Clone the repository:
 ```bash
-git clone [https://github.com/yourusername/event-booking-api.git](https://github.com/dipendrakumar2/Event-API)
+git clone https://github.com/dipendrakumar2/Event-API
 cd Event-API)
 ```
 
@@ -53,7 +53,12 @@ php artisan migrate
 
 6. Install Laravel Sanctum:
 ```bash
+composer require laravel/sanctum
+
 php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+
+php artisan migrate
+
 ```
 
 ## API Endpoints
@@ -94,16 +99,9 @@ php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
 
 ## Testing
 
-Refer Postman Collection attached
+Refer Postman Collection attached https://github.com/dipendrakumar2/Event-API/blob/main/Event-API.postman_collection.json
 
 ## License
 
 This project is open-source and available under the [MIT License](LICENSE).
 
-## Contributing
-
-Pull requests are welcome. For major changes, please feel free to reachout to me.
-
-## Support
-
-For support, please open an issue in the GitHub repository.
