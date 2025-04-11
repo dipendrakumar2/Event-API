@@ -94,7 +94,7 @@ php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
 
 ## Testing
 
-Refer Postman Collection attached
+Refer Postman Collection attached https://github.com/dipendrakumar2/Event-API/blob/main/Event-API.postman_collection.json
 
 ## License
 
